@@ -35,7 +35,9 @@ app.post("/users", (req, res) => {
     // Récupère la liste des users
     const users = readUsers();
     // Création du nouveau user
-    if (!req.files) {
+    if (users.some((user) => user.email === body.email)) {
+        return res.status(403).send({err:'Cet email est déjà utilisé, veuillez en saisir un autre'});
+    } else if (!req.files) {
         res.send({
             status: false,
             message: 'No file uploaded'
@@ -56,9 +58,6 @@ app.post("/users", (req, res) => {
             gender: body.gender,
         };
 
-        if (users.some((user) => user.email === newUser.email)) {
-            return res.status(405).send('Email déjà pris !');
-        } else {
 
             // Ajoute le nouveau user dans le tableau d'users
             users.push(newUser);
@@ -66,7 +65,6 @@ app.post("/users", (req, res) => {
             fs.writeFileSync("./users.json", JSON.stringify(users, null, 4));
             res.json(users);
         }
-    }
 });
 
 app.put("/users/:id", (req, res) => {
