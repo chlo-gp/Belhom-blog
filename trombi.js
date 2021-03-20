@@ -76,7 +76,11 @@ app.put("/users/:id", (req, res) => {
     // Création du nouveau user
 
     const id = Number(req.params.id);
-    const newUser = {
+    if (users.filter((user) => user.id !== body.id).some((user) => user.email === body.email)) {
+        return res.status(403).send({err:'Cet email est déjà utilisé, veuillez en saisir un autre'});
+    } else {
+
+        const newUser = {
         id: id,
         lastName: body.lastName.toUpperCase(),
         firstName: body.firstName,
@@ -86,9 +90,7 @@ app.put("/users/:id", (req, res) => {
         avatarUrl: body.avatarUrl,
         gender: body.gender,
     };
-    if (users.filter((user) => user.id !== newUser.id).some((user) => user.email === newUser.email)) {
-        return res.json({err: "Email déjà pris !"});
-    } else {
+
         // Ajoute le nouveau user dans le tableau d'users
         const newUsers = [...users.filter((user) => user.id !== id), newUser];
         // Ecris dans le fichier pour insérer la liste des users
