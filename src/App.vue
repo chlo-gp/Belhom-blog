@@ -14,15 +14,14 @@
         <router-link to="/" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
           Home
         </router-link>
-        <router-link to="/" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
+        <router-link to="/blog" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
           Blog
-        </router-link>
-        <router-link to="/" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white">
-          Article
         </router-link>
       </div>
       <div>
-        <a href="#" class="inline-block text-sm px-5 py-3 leading-none border rounded bg-primary-500 text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Contact</a>
+        <router-link to="/Contact" class="inline-block text-sm px-5 py-3 leading-none border rounded bg-primary-500 text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
+          Contact
+        </router-link>
       </div>
     </div>
   </div>
