@@ -13,7 +13,8 @@ app.use(fileUpload({
     createParentPath: true
 }));
 
-const readUsers = () => JSON.parse(fs.readFileSync("./users.json").toString());
+const readArticles = () => JSON.parse(fs.readFileSync("./articles.json").toString());
+const readProducts = () => JSON.parse(fs.readFileSync("./products.json").toString());
 
 getAge = (dateString) => {
     let today = new Date();
@@ -26,16 +27,16 @@ getAge = (dateString) => {
     return age;
 }
 
-app.get("/users", (req, res) => {
-    res.json(readUsers());
+app.get("/blog", (req, res) => {
+    res.json(readArticles());
 });
 
-app.post("/users", (req, res) => {
+app.post("/blog", (req, res) => {
     const body = req.body;
-    // Récupère la liste des users
-    const users = readUsers();
-    // Création du nouveau user
-    if (users.some((user) => user.email === body.email)) {
+    // Récupère la liste des articles
+    const articles = readArticles();
+    // Création du nouvel article
+    if (articles.some((article) => article.email === body.email)) {
         return res.status(403).send({err:'Cet email est déjà utilisé, veuillez en saisir un autre'});
     } else if (!req.files) {
         res.send({
@@ -47,8 +48,8 @@ app.post("/users", (req, res) => {
         avatar.mv('./uploads/' + avatar.name);
         res.json(req.files.avatarUrl);
 
-        const newUser = {
-            id: Math.max(...users.map((user) => user.id)) + 1,
+        const newArticle = {
+            id: Math.max(...articles.map((article) => article.id)) + 1,
             lastName: body.lastName.toUpperCase(),
             firstName: body.firstName,
             email: body.email,
@@ -60,18 +61,18 @@ app.post("/users", (req, res) => {
 
 
             // Ajoute le nouveau user dans le tableau d'users
-            users.push(newUser);
+        articles.push(newArticle);
             // Ecris dans le fichier pour insérer la liste des users
-            fs.writeFileSync("./users.json", JSON.stringify(users, null, 4));
-            res.json(users);
+            fs.writeFileSync("./articles.json", JSON.stringify(articles, null, 4));
+            res.json(articles);
         }
 });
 
-app.put("/users/:id", (req, res) => {
+app.put("/blog/:id", (req, res) => {
     const body = req.body;
 
     // Récupère la liste des users
-    const users = readUsers();
+    const users = readArticles();
 
     // Création du nouveau user
 
@@ -102,7 +103,7 @@ app.put("/users/:id", (req, res) => {
 app.get("/users/:id", (req, res) => {
 
     // Récupère la liste des users
-    const users = readUsers();
+    const users = readArticles();
     const user = users.find((user) => user.id === Number(req.params.id));
 
     res.json(user);
@@ -110,12 +111,18 @@ app.get("/users/:id", (req, res) => {
 
 app.delete('/users/:id', function (req, res) {
     // Récupère la liste des users
-    const users = readUsers();
+    const users = readArticles();
     const newUsers = users.filter((user) => user.id !== Number(req.params.id));
 
-    fs.writeFileSync("./users.json", JSON.stringify(newUsers, null, 4));
+    fs.writeFileSync("./articles.json", JSON.stringify(newUsers, null, 4));
     res.json(newUsers);
 
 });
+
+// PRODUCTS //
+app.get("/products", (req, res) => {
+    res.json(readProducts());
+});
+
 
 app.listen(port, () => console.log(`le serveur est lancé sur le port ${port}`))

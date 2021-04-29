@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Nettoyant peaux grasse",
+      "brand": "Cerave",
+      "category": [
+        "peau",
+        "peau-grasse"
+      ],
+      "price": "10",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ...",
+      "thumbnail": "http://172.30.92.30:1501/IMG_20200118_115824.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Nettoyant peaux sèches",
+      "brand": "Cerave",
+      "category": [
+        "peau",
+        "peau-sèches"
+      ],
+      "price": "10",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ...",
+      "thumbnail": "http://172.30.92.30:1501/IMG_20200118_115824.jpg"
+    }
+  ]
+}
