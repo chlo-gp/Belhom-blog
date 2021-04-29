@@ -22,7 +22,7 @@
             <img src="@/assets/googleplay.png" class="w-full">
           </div>
         </div>
-        
+
         <div class="mt-2 justify-center flex-row flex">
           <a href="/#" class="w-6 mx-1">
             <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%"
