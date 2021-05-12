@@ -125,7 +125,7 @@ export default {
     },
     fetchArticles() {
       axios
-          .get('http://localhost:1501/blog')
+          .get('/blog')
           .then(response => (this.results.push.apply(this.results, response.data)))
           .catch(error => {
             console.log(error)
