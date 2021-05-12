@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node App.js",
     "dev": "App trombi.js",
-    "build": "cd front && vue-cli-service build"
+    "build": "cd front && yarn build"
   },
   "proxy": "http://localhost:5000"
 }
