@@ -2,27 +2,60 @@
   "products": [
     {
       "id": "1",
-      "name": "Nettoyant peaux grasse",
-      "brand": "Cerave",
-      "category": [
-        "peau",
-        "peau-grasse"
-      ],
+      "name": "Nettoyant peaux grasse 10€",
+      "brand": "Akvhj",
+      "category":
+        "visage",
       "price": "10",
-      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ...",
-      "thumbnail": "http://172.30.92.30:1501/IMG_20200118_115824.jpg"
+      "desc": "Facilement irritée, votre peau est inconfortable et sujette aux rougeurs et inflammations. En quelques gestes simples, apaisez votre peau et retrouvez douceur et sérénité.",
+      "thumbnail": "http://172.30.92.28:1501/product.jpg"
     },
     {
       "id": "2",
-      "name": "Nettoyant peaux sèches",
-      "brand": "Cerave",
-      "category": [
+      "name": "Nettoyant peaux sèches 9€",
+      "brand": "Neutrogena",
+      "category":
         "peau",
-        "peau-sèches"
-      ],
+      "price": "9",
+      "desc": "Facilement irritée, votre peau est inconfortable et sujette aux rougeurs et inflammations. En quelques gestes simples, apaisez votre peau et retrouvez douceur et sérénité.",
+      "thumbnail": "http://172.30.92.28:1501/product.jpg"
+    },
+    {
+      "id": "3",
+      "name": "le soin lavant bain de soleil 15€",
+      "brand": "Umaï",
+      "category": "corps",
+      "price": "15",
+      "desc": "Notre soin lavant Bain de soleil vous replongera dans la douceur des journées estivales grâce à ses notes florales, poudrées et fruitées. Il nous rappelle les sensations des rayons du soleil qui réchauffent notre peau.",
+      "thumbnail": "http://172.30.92.28:1501/savon-umai.png"
+    },
+    {
+      "id": "4",
+      "name": "Nettoyant peaux sèches 2€",
+      "brand": "Cerave",
+      "category":
+        "peau",
+      "price": "2",
+      "desc": "Facilement irritée, votre peau est inconfortable et sujette aux rougeurs et inflammations. En quelques gestes simples, apaisez votre peau et retrouvez douceur et sérénité.",
+      "thumbnail": "http://172.30.92.28:1501/product.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Nettoyant Barbe",
+      "brand": "Pfhjk",
+      "category":"barbe",
       "price": "10",
       "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ...",
-      "thumbnail": "http://172.30.92.30:1501/IMG_20200118_115824.jpg"
+      "thumbnail": "http://172.30.92.28:1501/product.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Shampoing 20€",
+      "brand": "ZOO",
+      "category": "cheveux",
+      "price": "20",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ...",
+      "thumbnail": "http://172.30.92.28:1501/product.jpg"
     }
   ]
 }
