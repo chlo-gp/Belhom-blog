@@ -8743,9 +8743,9 @@ vue-hot-reload-api@^2.3.0:
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
 vue-loader-v16@*:
-  version "16.0.0-beta.5.3"
-  resolved "https://registry.yarnpkg.com/vue-loader-v16/-/vue-loader-v16-16.0.0-beta.5.3.tgz#f62c7e80d49a180ee86683fe64977eb6c8a4788e"
-  integrity sha512-c1vuG2bXMTy059OnRVUKowFyXXAPfiWufhWomXb757HzWQ0Pq1TzyoSE82BOYnMemK4qKFXpnBMuHWWAItK6cg==
+  version "16.0.0-beta.5.4"
+  resolved "https://registry.yarnpkg.com/vue-loader-v16/-/vue-loader-v16-16.0.0-beta.5.4.tgz#8fbcf87dc69c9979ecd777adba4e8a0e7fd95a7e"
+  integrity sha512-sis7XW0hab2NRbWMGbYXlFwhaLE2sV/hqhVkLxV2/8XLsLL6Ylfz590IaJMSMiyqsEmFHW+fSfevnnIqOsYxoQ==
   dependencies:
     "@types/mini-css-extract-plugin" "^0.9.1"
     chalk "^3.0.0"
