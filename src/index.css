@@ -9,3 +9,9 @@ input[type="radio"]:checked + label {
 input[type="radio"]:hover + label, .reset:hover {
     @apply bg-primary-500 text-secondary-300 transition ease-in duration-300
 }
+.img-home {
+    transform: translate(30px, 30px);
+}
+.img-home2 {
+    transform: translate(-30px, 30px);
+}
