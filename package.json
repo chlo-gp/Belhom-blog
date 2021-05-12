@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node App.js",
     "dev": "App trombi.js",
-    "heroku-postbuild": "cd .. && yarn install && yarn build"
+    "heroku-postbuild": "cd front && yarn install && yarn build"
   },
   "proxy": "http://localhost:5000"
 }
