@@ -56,6 +56,7 @@
       </router-link>
     </div>
   </section>
+  <Newsletter/>
   </body>
   <Footer/>
 </template>
@@ -63,15 +64,16 @@
 <script>
 import axios from 'axios';
 import Footer from "@/components/Footer";
+import Newsletter from "@/components/Newsletter";
 
 export default {
   name: "Blog",
-  components: {Footer},
+  components: {Footer, Newsletter},
   data() {
     return {
       results: [],
       errored: false,
-      categoryFilter: (this.$route.query.category || "focus, belhom, infosActus,conseils").split(','),
+      categoryFilter: (this.$route.query.category || "focus,belhom,infosActus,conseils").split(','),
       searchArticles: this.$route.query.search || '',
     }
   },
