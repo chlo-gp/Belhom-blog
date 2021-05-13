@@ -23,7 +23,6 @@
       <div class="m-auto text-center">
         <h3 class="font-bold text-xl">Prune Voillot</h3>
         <p class="text-lg mb-5">Community Manager</p>
-        <p class="italic">Description de Prune</p>
         <div class="mt-2 justify-center flex-row flex">
           <a href="https://www.instagram.com/p_r_u_n_e_/?hl=fr" class="text-2xl mx-1">
             <i class="fab fa-instagram"></i>
@@ -39,7 +38,6 @@
       <div class=" m-auto text-center">
         <h3 class="font-bold text-xl">Arthur Miconnet</h3>
         <p class="text-lg mb-5">Webdesigner</p>
-        <p class="italic">Description d'Arthur</p>
         <div class="mt-2 justify-center flex-row flex">
           <a href="https://www.instagram.com/arthurmicou/?hl=fr" class="text-2xl mx-1">
             <i class="fab fa-instagram"></i>
@@ -52,7 +50,6 @@
       <div class="m-auto text-center">
         <h3 class="font-bold text-xl">Marine Stroebel</h3>
         <p class="text-lg mb-5">Rédactrice</p>
-        <p class="italic">Description de Marine</p>
         <div class="mt-2 justify-center flex-row flex">
           <a href="https://www.instagram.com/marinestrbl/?hl=fr" class="text-2xl mx-1">
             <i class="fab fa-instagram"></i>
@@ -68,7 +65,6 @@
       <div class="m-auto text-center">
         <h3 class="font-bold text-xl">Chloé Gallego-Pelegrin</h3>
         <p class="text-lg mb-5">Développeuse</p>
-        <p class="italic">Description de Chloé</p>
         <div class="mt-2 justify-center flex-row flex">
           <a href="https://www.instagram.com/chlo_gp/?hl=fr" class="text-2xl mx-1">
             <i class="fab fa-instagram"></i>
@@ -100,7 +96,7 @@
         </div>
         <div class="lg:w-5/12 order-2">
           <img
-              src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+              src="@/assets/skincare.jpg"
               class="rounded">
         </div>
       </div>
@@ -189,7 +185,7 @@
       <div class="lg:flex justify-between items-center">
         <div class="lg:w-5/12 lg:p-0 p-7">
           <img
-              src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+              src="@/assets/hommes.png"
               class="rounded">
         </div>
         <div class="lg:w-6/12 order-2 text-left ml-12">

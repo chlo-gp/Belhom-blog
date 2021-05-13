@@ -6,15 +6,14 @@
     <!-- container -->
     <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
       <!-- hero wrapper -->
-      <div class="hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-
+      <div class="py-8 hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <!-- hero text -->
         <div class="hero-text col-span-7">
           <h1 class="uppercase leading-none font-black	text-6xl md:text-5xl max-w-xl text-primary-500 text-left">Prêt à
             prendre soin de votre peau ?</h1>
           <p class="text-primary-500 text-2xl leading-relaxed font-thin text-left mt-8">Ici tu trouveras toutes les
             bonnes astuces beauté pour sublimer l’homme que tu es.</p>
-          <div class="get-app flex space-x-5 mt-10 justify-center md:justify-start">
+          <!-- <div class="get-app flex space-x-5 mt-10 justify-center md:justify-start">
             <button class="apple bg-white shadow-md px-3 py-2 rounded-lg flex items-center space-x-4">
               <div class="logo">
                 <svg
@@ -62,7 +61,7 @@
                 <p class="text-xs font-semibold text-gray-900">Google play</p>
               </div>
             </button>
-          </div>
+          </div> -->
         </div>
         <!-- hero image -->
         <div class="hero-image col-span-5">
@@ -91,9 +90,9 @@
           <br>
           Alors oui, au début ça peut faire peur, tous ces produits beauté, mais quand on veut, on peut monsieur !</p>
       </div>
-      <div class="lg:w-5/12 order-2 bg-primary-500">
+      <div class="lg:w-5/12 order-2 bg-primary-500 rounded-lg">
         <img
-            src="@/assets/homme-smile.jpg" class="img-home">
+            src="@/assets/homme-smile.jpg" class="img-home rounded-lg">
       </div>
     </div>
   </div>
@@ -101,11 +100,11 @@
   <!-- FEATURE 2 -->
   <div class="py-16 container m-auto px-6">
     <div class="lg:flex justify-between items-center">
-      <div class="lg:w-5/12 lg:p-0 p-7 bg-primary-500">
+      <div class="lg:w-5/12 lg:p-0 p-7 bg-primary-500 rounded-lg">
         <img
-            src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+            src="@/assets/rasage.jpeg"
             alt=""
-            class="img-home2">
+            class="img-home2 rounded-lg">
       </div>
       <div class="lg:w-6/12 order-2 text-right">
         <h2 class="text-4xl font-bold leading-tight mb-5 text-primary-500">Des produits éthiques pour un être
@@ -168,9 +167,10 @@
   <!-- BLOG -->
   <section class="flex justify-around max-w-6xl m-auto py-16">
     <div class="text-left m-auto">
-      <h2 class="text-4xl font-black leading-tight mb-5 text-primary-500">Le blog Belhom</h2>
-      <p class="text-xl mb-5">N’oublie pas de découvrir nos derniers
-        articles, conseils et autres actualités !</p>
+      <h2 class="text-4xl font-black leading-tight mb-5 text-primary-500">N’oublie pas de découvrir nos derniers
+        articles, conseils et autres actualités !</h2>
+      <p class="text-xl mb-5">Besoin d’un conseil ? D’une suggestion de marque éthique ? Ou encore des astuces pour prendre soin de toi ?
+        Nous sommes heureux de te dire que tu es au bon endroit bel homme !</p>
       <router-link to="/blog">
         <button class="bg-primary-500 text-lg text-secondary-300 font-bold py-4 px-16 rounded ">
           Voir le blog

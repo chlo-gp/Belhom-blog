@@ -10,19 +10,7 @@
         </ul>
     </div>
     <div class="bg-secondary-500 pt-2 w-full">
-      <div class="flex justify-between items-center p-5 m-auto border-t border-primary-500 text-gray-800 text-sm flex-col md:flex-row ">
-        <div class="text-sm text-color">
-          <p>© 2021 Belhom. Tous droits réservés</p>
-        </div>
-        <div class="flex py-6 md:py-0 justify-center md:justify-between items-centers">
-          <div class="mr-4 w-40">
-            <img src="@/assets/appstore.png" class="w-full">
-          </div>
-          <div class="w-40">
-            <img src="@/assets/googleplay.png" class="w-full">
-          </div>
-        </div>
-
+      <div class="flex items-center p-5 m-auto border-t border-primary-500 text-gray-800 text-sm flex-col ">
         <div class="mt-2 justify-center flex-row flex">
           <a href="/#" class="text-3xl mx-1">
             <i class="fab fa-facebook-f"></i>
@@ -34,6 +22,17 @@
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
+        <div class="text-sm text-color">
+          <p>© 2021 Belhom. Tous droits réservés</p>
+        </div>
+        <!--<div class="flex py-6 md:py-0 justify-center md:justify-between items-centers">
+          <div class="mr-4 w-40">
+            <img src="@/assets/appstore.png" class="w-full">
+          </div>
+          <div class="w-40">
+            <img src="@/assets/googleplay.png" class="w-full">
+          </div>
+        </div> -->
       </div>
     </div>
   </div>
