@@ -19,7 +19,7 @@
         </router-link>
       </div>
       <div>
-        <router-link to="/Contact" class="inline-block text-lg px-5 py-3 leading-none border rounded bg-primary-500 text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
+        <router-link to="/contact" class="inline-block text-lg px-5 py-3 leading-none border rounded bg-primary-500 text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
           Contact
         </router-link>
       </div>
