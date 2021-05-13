@@ -96,7 +96,7 @@
         </div>
         <div class="lg:w-5/12 order-2">
           <img
-              src="@/assets/skincare.jpg"
+              src="@/assets/skincare.png"
               class="rounded">
         </div>
       </div>
