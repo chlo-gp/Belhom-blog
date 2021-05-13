@@ -94,10 +94,10 @@
             proposer des cosmétiques éthiques et responsables, avec une composition super clean.
           </p>
         </div>
-        <div class="lg:w-5/12 order-2">
+        <div class="lg:w-5/12 order-2 bg-primary-500 rounded-lg">
           <img
               src="@/assets/skincare.png"
-              class="rounded">
+              class="img-home rounded">
         </div>
       </div>
     </div>
@@ -183,10 +183,10 @@
     <!-- FEATURE 2 -->
     <div class="py-20 container m-auto px-6">
       <div class="lg:flex justify-between items-center">
-        <div class="lg:w-5/12 lg:p-0 p-7">
+        <div class="lg:w-5/12 order-2 bg-primary-500 rounded-lg">
           <img
               src="@/assets/hommes.png"
-              class="rounded">
+              class="img-home2 rounded">
         </div>
         <div class="lg:w-6/12 order-2 text-left ml-12">
           <h2 class="text-4xl font-bold leading-tight mb-5">Belhom pour tous les hommes</h2>

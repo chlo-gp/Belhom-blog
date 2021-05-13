@@ -9,7 +9,6 @@
       <h2 class="mb-8">{{ article.lead }}</h2>
       <p class="px-12 text-justify">{{ article.content }}</p>
     </div>
-    
     <Newsletter/>
   </div>
   <Footer/>
