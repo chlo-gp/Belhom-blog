@@ -1,9 +1,9 @@
 <template>
   <div class="bg-secondary-300 text-primary-500">
-    <section class="px-48">
+    <section class="px-8 md:px-48">
       <h1 class="text-4xl mb-5  font-bold leading-tight">Nous sommes des passionné(e)s de
         cosmétiques</h1>
-      <p class="text-lg px-12">Nous sommes des femmes, mais pas que ! Nous comptons un homme parmi nous, le seul et
+      <p class="text-lg px-5 md:px-12">Nous sommes des femmes, mais pas que ! Nous comptons un homme parmi nous, le seul et
         l’unique, le fabuleux...
         Bref, on en fait trop.
         <br><br>
@@ -105,7 +105,7 @@
     <!-- VALEURS -->
     <section>
       <h2 class="text-4xl font-bold leading-tight py-8">Nos Valeurs</h2>
-      <div class="mt-2 justify-around flex-row flex mx-24">
+      <div class="mt-2 justify-around md:flex-row flex flex-col mx-24">
         <div>
           <svg class="m-auto" width="120" height="126" viewBox="0 0 128 126" fill="none"
                xmlns="http://www.w3.org/2000/svg">
@@ -183,13 +183,13 @@
     <!-- FEATURE 2 -->
     <div class="py-20 container m-auto px-6">
       <div class="lg:flex justify-between items-center">
-        <div class="lg:w-5/12 order-2 bg-primary-500 rounded-lg">
+        <div class="lg:w-5/12 w-8/12 m-auto order-2 bg-primary-500 rounded-lg">
           <img
               src="@/assets/hommes.png"
               class="img-home2 rounded">
         </div>
-        <div class="lg:w-6/12 order-2 text-left ml-12">
-          <h2 class="text-4xl font-bold leading-tight mb-5">Belhom pour tous les hommes</h2>
+        <div class="lg:w-6/12 order-2 text-left md:ml-12">
+          <h2 class="text-4xl my-10 md:my-0 font-bold leading-tight mb-5">Belhom pour tous les hommes</h2>
           <p class="text-xl">Nous avons bien conscience que tous les hommes n’ont pas le même niveau d’expertise en
             cosmétiques. C’est pour cela que Belhom inclut tout le monde, du débutant au confirmé des rituels beauté !
             <br><br>

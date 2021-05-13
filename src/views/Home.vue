@@ -9,7 +9,7 @@
       <div class="py-8 hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <!-- hero text -->
         <div class="hero-text col-span-7">
-          <h1 class="uppercase leading-none font-black	text-6xl md:text-5xl max-w-xl text-primary-500 text-left">Prêt à
+          <h1 class="uppercase leading-none font-black text-4xl md:text-6xl md:text-5xl max-w-xl text-primary-500 text-left">Prêt à
             prendre soin de votre peau ?</h1>
           <p class="text-primary-500 text-2xl leading-relaxed font-thin text-left mt-8">Ici tu trouveras toutes les
             bonnes astuces beauté pour sublimer l’homme que tu es.</p>
@@ -73,7 +73,7 @@
 
   <div class="container m-auto text-center">
     <h2 class="text-primary-500 font-black text-4xl leading-tight mb-5">Un homme oui,<br> mais qui prend soin de lui c’est mieux !</h2>
-    <p class="text-2xl px-24">Et oui, contrairement à ce que certaines personnes peuvent dire,
+    <p class="text-2xl px-4 md:px-24">Et oui, contrairement à ce que certaines personnes peuvent dire,
       tu as le droit (et le devoir) en tant qu’homme de prendre soin de ta peau,
       de ton corps, de ta barbe, de tes cheveux.
       <br>
@@ -81,7 +81,7 @@
   </div>
 
   <!-- FEATURE 1 -->
-  <div class="py-16 container m-auto px-6">
+  <div class="md:py-16 py-5 container m-auto px-6">
     <div class="lg:flex justify-between items-center">
       <div class="lg:w-6/12 lg:p-0 p-7 text-left">
         <h2 class="text-4xl font-bold leading-tight mb-5 text-primary-500">Et non s’occuper de soi ce n’est pas
@@ -90,7 +90,7 @@
           <br>
           Alors oui, au début ça peut faire peur, tous ces produits beauté, mais quand on veut, on peut monsieur !</p>
       </div>
-      <div class="lg:w-5/12 order-2 bg-primary-500 rounded-lg">
+      <div class="lg:w-5/12 w-8/12 m-auto my-8 md:my-0 order-2 bg-primary-500 rounded-lg">
         <img
             src="@/assets/homme-smile.jpg" class="img-home rounded-lg">
       </div>
@@ -98,15 +98,15 @@
   </div>
 
   <!-- FEATURE 2 -->
-  <div class="py-16 container m-auto px-6">
+  <div class="md:py-16 py-5 container m-auto px-6">
     <div class="lg:flex justify-between items-center">
-      <div class="lg:w-5/12 lg:p-0 p-7 bg-primary-500 rounded-lg">
+      <div class="lg:w-5/12 w-8/12 m-auto my-8 md:my-0 order-2 bg-primary-500 rounded-lg">
         <img
             src="@/assets/rasage.jpeg"
             alt=""
             class="img-home2 rounded-lg">
       </div>
-      <div class="lg:w-6/12 order-2 text-right">
+      <div class="lg:w-6/12 order-2 pt-5 md:pt-0 text-right">
         <h2 class="text-4xl font-bold leading-tight mb-5 text-primary-500">Des produits éthiques pour un être
           magnifique.</h2>
         <p class="text-xl"> Si tu dois commencer par prendre soin de toi autant commencer avec des produits bons pour
@@ -126,7 +126,7 @@
   <div class="flex flex-col bg-primary-500 text-secondary-300 py-20">
     <img src="@/assets/logo-beige.svg" class="w-20 m-auto mb-5">
     <h2 class="text-4xl font-thin mb-5">Notre newsletter</h2>
-    <p class="text-xl font-thin px-40 pb-10">Tu es intéressé par les cosmétiques, les routines beauté et les produits naturels ?
+    <p class="text-xl font-thin px-8 md:px-40 pb-10">Tu es intéressé par les cosmétiques, les routines beauté et les produits naturels ?
       <br>
       Rejoins l'aventure, tu vas briller de mille feux avec Belhom !</p>
     <!-- Auth Card -->
@@ -165,7 +165,7 @@
   </div>
 
   <!-- BLOG -->
-  <section class="flex justify-around max-w-6xl m-auto py-16">
+  <section class="flex md:flex-row flex-col justify-around max-w-6xl m-auto py-16">
     <div class="text-left m-auto">
       <h2 class="text-4xl font-black leading-tight mb-5 text-primary-500">N’oublie pas de découvrir nos derniers
         articles, conseils et autres actualités !</h2>
@@ -177,7 +177,7 @@
         </button>
       </router-link>
     </div>
-    <div class="ml-32 max-w-sm">
+    <div class="md:ml-32 pt-8 mx-8 md:mx-0 md:pt-0 max-w-sm">
       <router-link :to="{ name: 'Article', params: { id: 1}}" class="">
         <div class="blog-card text-xl h-full bg-white shadow-xl rounded-3xl">
           <img src="@/assets/rasage.jpg" class="h-48 w-full object-cover overflow-hidden rounded-t-3xl">

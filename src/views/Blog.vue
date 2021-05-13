@@ -1,13 +1,13 @@
 <template>
   <body class="bg-secondary-300">
   <section class="text-left px-8">
-    <h1 class="uppercase leading-none font-black text-primary-500 text-5xl mb-2">Le blog Belhom</h1>
+    <h1 class="uppercase leading-none font-black text-primary-500 text-3xl md:text-5xl mb-2">Le blog Belhom</h1>
   </section>
   <section class="pt-4 pb-mt-5">
     <div class="container m-auto">
       <div class="d-none d-md-block col-12">
 
-        <h3 class="text-left text-4xl uppercase font-black mb-4">Catégories</h3></div>
+        <h3 class="text-left text-2xl md:text-4xl uppercase font-black mb-4">Catégories</h3></div>
       <div class="flex justify-center flex-wrap">
         <p class="reset p-1 max-w-xs mb-3 mr-3 shadow-lg rounded-3xl px-4 py-3" @click="resetFilters">Toutes</p>
         <input type="radio" v-model="categoryFilter" value="focus" id="focus" class="invisible">
@@ -20,8 +20,8 @@
         <input type="radio" v-model="categoryFilter" value="conseils" id="conseils" class=" invisible">
         <label for="conseils" class="p-1 max-w-xs mb-3 mr-3 shadow-lg rounded-3xl px-4 py-3">Conseils & Astuces</label>
       </div>
-      <div class="w-1/2	rounded-3xl	bg-white py-4 text-xl my-3 mx-auto col-md-5 col-12">
-        <div role="group" class="flex flex-wrap items-center">
+      <div class="md:w-1/2 w-11/12 rounded-3xl	bg-white py-4 text-xl my-3 mx-auto col-md-5 col-12">
+        <div role="group" class="flex items-center">
           <div class="px-4 icone">
             <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img"
                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
