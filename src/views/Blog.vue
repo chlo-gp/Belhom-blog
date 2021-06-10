@@ -121,7 +121,7 @@ export default {
       axios
           .get('https://belhom-website.herokuapp.com/blog')
           .then(response => (this.results.push.apply(this.results, [response.data])))
-          .then(console.log(results))
+          .then(console.log(this.results))
           .catch(error => {
             console.log(error)
             this.errored = true
