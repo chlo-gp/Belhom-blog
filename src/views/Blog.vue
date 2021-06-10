@@ -98,7 +98,7 @@ export default {
 
   created: function () {
     this.fetchArticles();
-    console.log(this.results)
+    console.log(searchedArticles)
   },
 
   methods: {
