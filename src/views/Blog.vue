@@ -65,7 +65,6 @@
 import axios from 'axios';
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
-import { response } from 'express';
 
 export default {
   name: "Blog",
