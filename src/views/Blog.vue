@@ -65,6 +65,7 @@
 import axios from 'axios';
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
+import { response } from 'express';
 
 export default {
   name: "Blog",
@@ -121,7 +122,7 @@ export default {
       axios
           .get('https://belhom-website.herokuapp.com/blog')
           .then(response => (this.results.push.apply(this.results, [response.data])))
-          .then(console.log(this.results))
+          .then(console.log(response.data))
           .catch(error => {
             console.log(error)
             this.errored = true
