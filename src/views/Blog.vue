@@ -125,6 +125,7 @@ export default {
             console.log(error)
             this.errored = true
           })
+          console.log(this.results)
     },
   }
 }
