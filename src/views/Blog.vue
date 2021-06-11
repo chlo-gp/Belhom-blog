@@ -120,7 +120,7 @@ export default {
     fetchArticles() {
       axios
           .get('https://belhom-website.herokuapp.com/blog')
-          .then(response => (this.results.push(this.results, [response.data])))
+          .then(response => (this.results.push(response.data)))
           .catch(error => {
             console.log(error)
             this.errored = true
