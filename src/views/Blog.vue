@@ -119,7 +119,7 @@ export default {
     },
     fetchArticles() {
       axios
-          .get('https://belhom-website.herokuapp.com/blog')
+          .get('/blog')
           .then(response => (this.results.push(response.data)))
           .catch(error => {
             console.log(error)
