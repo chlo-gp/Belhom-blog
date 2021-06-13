@@ -26,7 +26,7 @@ app.get(/.*/, function (req, res) {
     res.sendFile(path.join(__dirname, '../dist/index.html'))
 })
 
-const readArticles = () => JSON.parse(fs.readFileSync("./articles.json").toString());
+/*const readArticles = () => JSON.parse(fs.readFileSync("./articles.json").toString());
 app.get("/blog", (req, res) => {
     res.json(readArticles());
 });
@@ -35,7 +35,11 @@ app.get("/blog/:id", (req, res) => {
     const articles = readArticles();
     const article = articles.find((article) => article.id === Number(req.params.id));
     res.json(article);
-});
+});*/
+
+require("./routes/articles.routes")(app);
+require("./routes/products.routes")(app);
+require("./routes/reservations.routes")(app);
 
 const port = process.env.PORT || 5000
 app.listen(port)
