@@ -15,8 +15,11 @@ app.use(fileUpload({
     createParentPath: true
 }));
 
-const db = require("./models");
+const db = require("./articles/articles.model");
 db.sequelize.sync();
+
+const db2 = require("./products/products.model");
+db2.sequelize.sync();
 
 //here we are configuring dist to serve app files
 app.use('/', serveStatic(path.join(__dirname, '../dist')))
