@@ -37,9 +37,8 @@ app.get("/blog/:id", (req, res) => {
     res.json(article);
 });*/
 
-require("./routes/articles.routes")(app);
-require("./routes/products.routes")(app);
-require("./routes/reservations.routes")(app);
+require("./articles/articles.routes")(app);
+require("./products/products.routes")(app);
 
 const port = process.env.PORT || 5000
 app.listen(port)
