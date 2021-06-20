@@ -2,27 +2,27 @@ const dao = require("../articles/articles.DAO")
 
 // Create and Save a new Article
 exports.create = (req, res) => {
-   dao.create;
+   dao.create(req, res);
  };
 
 // Retrieve all Articles from the database.
 exports.findAll = (req, res) => {
-   dao.findAll;
+   dao.findAll(req, res);
  };
 
 // Find a single Article with an id
 exports.findOne = (req, res) => {
-   dao.findOne;
+   dao.findOne(req, res);
  };
 
 // Update a Article by the id in the request
 exports.update = (req, res) => {
-   dao.update;
+   dao.update(req, res);
  };
 
 exports.delete = ()=> {
-   dao.delete;
+   dao.delete(req, res);
 }
 exports.deleteAll = () => {
-   dao.deleteAll;
+   dao.deleteAll(req, res);
 }

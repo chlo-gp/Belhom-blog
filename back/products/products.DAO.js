@@ -1,6 +1,6 @@
 const db = require("./products.model");
 const Products = db.product;
-const Op = db.Sequelize.Op;
+//const Op = db.Sequelize.Op;
 
 // Create and Save a new Product
 exports.create = (req, res) => {

@@ -1,6 +1,6 @@
-const db = require("../articles/articles.model");
+const db = require("./articles.model");
 const Articles = db.articles;
-const Op = db.Sequelize.Op;
+const {Op} = require("sequelize");
 
 // Create and Save a new Article
 exports.create = (req, res) => {
