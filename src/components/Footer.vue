@@ -3,9 +3,9 @@
     <img src="@/assets/logo.png" class="max-w-xs">
     <div class="my-6 text-md font-bold text-black flex flex-col md:items-center pt-3">
         <ul class="md:flex items-center">
-          <router-link to="/blog" class="md:mr-6 cursor-pointer pt-4 lg:py-0">Blog</router-link>
-          <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">Contact</li>
-          <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">Mentions légales</li>
+          <router-link to="/blog" class="mr-2 md:mr-6 cursor-pointer pt-4 lg:py-0">Blog</router-link>
+          <router-link to="/contact" class="mr-2 md:mr-6 cursor-pointer pt-4 lg:py-0">Contact</router-link>
+          <router-link to="/mentions" class="mr-2 md:mr-6 cursor-pointer pt-4 lg:py-0">Mentions légales</router-link>
           <li class="cursor-pointer pt-4 lg:py-0">Politique de Confidentialité</li>
         </ul>
     </div>
