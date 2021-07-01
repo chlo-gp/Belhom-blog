@@ -1,7 +1,7 @@
 <template>
   <!-- NEWSLETTER -->
   <div class="flex flex-col py-8 md:py-20">
-    <p class="text-2xl px-10 md:px-40 py-10">Inscris-toi à notre newsletter pour ne rien louper !</p>
+    <p class="text-2xl px-8 md:px-40 py-10">Inscris-toi à notre newsletter pour ne rien louper !</p>
     <!-- Auth Card -->
     <div class="m-auto w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12
             px-6 py-10 sm:px-10 sm:py-6
