@@ -46,7 +46,7 @@
          :key="article.title" class="my-3 col-md-4 col-12">
       <router-link :to="{ name: 'Article', params: { id: article.id }}" class="">
         <div class="blog-card text-xl h-full bg-white shadow-xl rounded-3xl">
-          <img :src="article.thumbnail" class="h-48 w-full object-cover overflow-hidden rounded-t-3xl">
+          <img :src="require('@/assets/'+article.thumbnail)" class="h-48 w-full object-cover overflow-hidden rounded-t-3xl">
           <div class="p-6 text-left">
             <small class="subheader uppercase text-sm">{{ article.category }}</small>
             <h4 class="leading-none text-2xl font-black text-primary-500 mb-0">{{ article.title }}</h4>
@@ -119,8 +119,8 @@ export default {
     },
     fetchArticles() {
       axios
-          .get('/blog')
-          .then(response => (this.results.push(response.data)))
+          .get('http://localhost:5000/api/blog')
+          .then(response => (this.results = response.data))
           .catch(error => {
             console.log(error)
             this.errored = true

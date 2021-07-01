@@ -1,6 +1,6 @@
 <template>
   <div class="about bg-secondary-300">
-    <img :src="article.thumbnail" class="w-10/12 object-cover h-64 rounded m-auto mb-8">
+    <img :src="require('@/assets/'+article.thumbnail)" class="w-10/12 object-cover h-64 rounded m-auto mb-8">
     <div class="px-24">
       <h1 class="px-32 mb-8 text-primary-500 font-black text-3xl">
         {{ article.title }}
@@ -36,7 +36,7 @@ export default {
   methods: {
     fetchArticle() {
       axios
-          .get(`http://localhost:1501/blog/${this.$route.params.id}`)
+          .get(`http://localhost:5000/api/blog/${this.$route.params.id}`)
           .then(response => (this.article = response.data))
           .catch(error => {
             console.log(error)

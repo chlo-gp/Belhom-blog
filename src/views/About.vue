@@ -1,6 +1,6 @@
 <template>
   <div class="bg-secondary-300 text-primary-500">
-    <section class="px-8 md:px-48">
+    <section class="px-6 md:px-48">
       <h1 class="text-4xl mb-5  font-bold leading-tight">Nous sommes des passionné(e)s de
         cosmétiques</h1>
       <p class="text-lg px-5 md:px-12">Nous sommes des femmes, mais pas que ! Nous comptons un homme parmi nous, le seul et
@@ -80,7 +80,7 @@
     </div>
 
     <!-- FEATURE 1 -->
-    <div class="py-20 container m-auto px-6">
+    <div class="py-5 md:py-20 container m-auto px-6">
       <div class="lg:flex justify-between items-center">
         <div class="lg:w-6/12 lg:p-0 p-7 text-left">
           <h2 class="text-4xl font-bold leading-tight mb-5">Une démarche engagée</h2>
@@ -94,7 +94,7 @@
             proposer des cosmétiques éthiques et responsables, avec une composition super clean.
           </p>
         </div>
-        <div class="lg:w-5/12 order-2 bg-primary-500 rounded-lg">
+        <div class="my-5 lg:w-5/12 order-2 bg-primary-500 rounded-lg">
           <img
               src="@/assets/skincare.png"
               class="img-home rounded">
@@ -183,7 +183,7 @@
     <!-- FEATURE 2 -->
     <div class="py-20 container m-auto px-6">
       <div class="lg:flex justify-between items-center">
-        <div class="lg:w-5/12 w-8/12 m-auto order-2 bg-primary-500 rounded-lg">
+        <div class="lg:w-5/12 m-auto order-2 bg-primary-500 rounded-lg">
           <img
               src="@/assets/hommes.png"
               class="img-home2 rounded">

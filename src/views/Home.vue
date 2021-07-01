@@ -99,8 +99,8 @@
 
   <!-- FEATURE 2 -->
   <div class="md:py-16 py-5 container m-auto px-6">
-    <div class="lg:flex justify-between items-center">
-      <div class="lg:w-5/12 w-8/12 m-auto my-8 md:my-0 order-2 bg-primary-500 rounded-lg">
+    <div class="flex flex-col lg:flex-row justify-between items-center">
+      <div class="lg:w-5/12 w-8/12 m-auto my-8 md:my-0 order-last lg:order-first bg-primary-500 rounded-lg">
         <img
             src="@/assets/rasage.jpeg"
             alt=""
@@ -166,7 +166,7 @@
 
   <!-- BLOG -->
   <section class="flex md:flex-row flex-col justify-around max-w-6xl m-auto py-16">
-    <div class="text-left m-auto">
+    <div class="text-left mx-5 md:m-auto">
       <h2 class="text-4xl font-black leading-tight mb-5 text-primary-500">N’oublie pas de découvrir nos derniers
         articles, conseils et autres actualités !</h2>
       <p class="text-xl mb-5">Besoin d’un conseil ? D’une suggestion de marque éthique ? Ou encore des astuces pour prendre soin de toi ?
