@@ -6,6 +6,7 @@ module.exports = (sequelize, Sequelize) => {
         category: {type: Sequelize.STRING(255), allowNull: false,},
         price: {type: Sequelize.INTEGER, allowNull: false,},
         desc: {type: Sequelize.STRING(255), },
+        apply: {type: Sequelize.STRING(255), },
         thumbnail: {type: Sequelize.STRING(255),},
     });
   
