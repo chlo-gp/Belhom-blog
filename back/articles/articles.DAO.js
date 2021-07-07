@@ -17,7 +17,6 @@ exports.create = (req, res) => {
       return;
     }
 
-  // Create an Article
   const article = {
     title: req.body.title,
     category: req.body.category,

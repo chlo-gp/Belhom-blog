@@ -118,7 +118,7 @@ exports.delete = (req, res) => {
                     message: "Product was deleted successfully!"
                 });
             } else {
-                res.send({
+                res.status(404).send({
                     message: `Cannot delete Product with id=${id}. Maybe Product was not found!`
                 });
             }
