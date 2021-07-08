@@ -1,5 +1,6 @@
 module.exports = {
-    HOST: "localhost",
+   "development": {
+     HOST: "localhost",
     USER: "root",
     PASSWORD: "",
     DB: "belhom",
@@ -9,5 +10,10 @@ module.exports = {
       min: 0,
       acquire: 30000,
       idle: 10000
+    }
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
     }
   };
