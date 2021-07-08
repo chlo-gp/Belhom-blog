@@ -116,7 +116,7 @@ export default {
     },
     fetchArticles() {
       axios
-          .get('http://localhost:5000/api/blog')
+          .get('https://belhom-api.herokuapp.com/api/blog')
           .then(response => (this.results = response.data))
           .catch(error => {
             console.log(error)
