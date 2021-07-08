@@ -39,8 +39,8 @@
   <p v-if="!results.length">
     Il n'y a <strong>aucun</strong> article
   </p>
+  
   <section class="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl m-auto py-4">
-
     <div v-for="article in searchedArticles" :key="article.title" class="my-3 col-md-4 col-12">
       <router-link :to="{ name: 'Article', params: { id: article.id }}">
         <div class="blog-card text-xl h-full bg-white shadow-xl rounded-3xl">

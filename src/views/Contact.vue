@@ -6,13 +6,13 @@
       <div class="m-auto w-10/12 p-12 px-6 py-10 sm:px-10 sm:py-6
             bg-primary-500 rounded-lg shadow-md lg:shadow-lg">
 
-        <form class="text-left mt-10" method="POST">
-          <!-- Email Input -->
+        <!-- <form class="text-left mt-10" method="POST">
+          // Email Input 
           <input id="name" type="text" name="name" placeholder="Ton prénom"
                  class="block w-full py-3 px-5 my-8 rounded-lg bg-secondary-300 appearance-none
                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
                  required/>
-          <!-- Email Input -->
+          // Email Input 
           <input id="email" type="email" name="email" placeholder="Ton email" autocomplete="email"
                  class="block mb-5 w-full py-3 px-5 mt-2 rounded-lg bg-secondary-300 appearance-none
                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
@@ -22,13 +22,13 @@
                    text-gray-500 focus:text-gray-500 focus:outline-none focus:border-gray-200" >Ton message
           </textarea>
 
-          <!-- Auth Buttton -->
+          // Auth Buttton
           <button type="submit"
                   class="px-8 py-3 mt-10 bg-secondary-300 rounded-lg font-medium focus:outline-none hover:bg-secondary-500
                   hover:shadow-none">
             Envoyer
           </button>
-        </form>
+        </form> -->
       </div>
       <div class="flex justify-center py-8">
         <i class="fab fa-facebook-f text-5xl px-5"></i>
