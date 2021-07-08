@@ -1,5 +1,4 @@
 <template>
-  <!-- NEWSLETTER -->
   <div class="flex flex-col py-8 md:py-20">
     <p class="text-2xl px-8 md:px-40 py-10">Inscris-toi à notre newsletter pour ne rien louper !</p>
     <!-- Auth Card -->
@@ -8,7 +7,7 @@
             bg-primary-500 rounded-lg shadow-md lg:shadow-lg">
 
       <form class="text-left mt-10" method="POST">
-        <!-- Email Input -->
+        <!-- Name Input -->
         <input id="name" type="text" name="name" placeholder="Ton prénom"
                class="block w-full py-3 px-5 my-8 rounded-lg bg-secondary-300 appearance-none
                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
@@ -18,11 +17,8 @@
                class="block w-full py-3 px-5 mt-2 rounded-lg bg-secondary-300 appearance-none
                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
                required/>
-
-        <!-- Auth Buttton -->
-        <button type="submit"
-                class="px-8 py-3 mt-10 bg-secondary-300 rounded-lg font-medium focus:outline-none hover:bg-secondary-500
-                  hover:shadow-none">
+        <button type="submit" class="px-8 py-3 mt-10 bg-secondary-300 rounded-lg font-medium focus:outline-none hover:bg-secondary-500 
+        hover:shadow-none">
           Envoyer
         </button>
       </form>
@@ -35,7 +31,3 @@ export default {
   name: "Newsletter"
 }
 </script>
-
-<style scoped>
-
-</style>

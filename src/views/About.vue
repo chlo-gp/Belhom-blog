@@ -201,7 +201,7 @@
       </div>
     </div>
     <!-- PARTENAIRES -->
-    <section class="py-8 mx-24">
+    <section class="py-8 mx-8 md:mx-24">
       <h2 class="text-4xl font-bold leading-tight mb-5 mb-8">Nos Partenaires</h2>
       <div class="justify-around flex-row flex flex-wrap">
         <img class="px-5" src="@/assets/bivouak.png" alt="">

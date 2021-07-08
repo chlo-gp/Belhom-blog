@@ -6,15 +6,14 @@
   <section class="pt-4 pb-mt-5">
     <div class="container m-auto">
       <div class="d-none d-md-block col-12">
-
-        <h3 class="text-left text-2xl md:text-4xl uppercase font-black mb-4">Catégories</h3></div>
+        <h3 class="text-left text-2xl md:text-4xl uppercase font-black mb-4">Catégories</h3>
+      </div>
       <div class="flex justify-center flex-wrap">
         <p class="reset p-1 max-w-xs mb-3 mr-3 shadow-lg rounded-3xl px-4 py-3" @click="resetFilters">Toutes</p>
         <input type="radio" v-model="categoryFilter" value="focus" id="focus" class="invisible">
         <label for="focus" class="p-1 max-w-xs mb-3 mr-3 shadow-lg rounded-3xl px-4 py-3">Focus</label>
         <input type="radio" v-model="categoryFilter" value="belhom" id="belhom" class=" invisible">
-        <label for="belhom" class="p-1 max-w-xs mb-3 mr-3 shadow-lg rounded-3xl px-4 py-3">
-          Belhom</label>
+        <label for="belhom" class="p-1 max-w-xs mb-3 mr-3 shadow-lg rounded-3xl px-4 py-3">Belhom</label>
         <input type="radio" v-model="categoryFilter" value="infosActus" id="infosActus" class=" invisible">
         <label for="infosActus" class="p-1 max-w-xs mb-3 mr-3 shadow-lg rounded-3xl px-4 py-3">Infos & Actus</label>
         <input type="radio" v-model="categoryFilter" value="conseils" id="conseils" class=" invisible">
@@ -42,15 +41,13 @@
   </p>
   <section class="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl m-auto py-4">
 
-    <div v-for="article in searchedArticles"
-         :key="article.title" class="my-3 col-md-4 col-12">
-      <router-link :to="{ name: 'Article', params: { id: article.id }}" class="">
+    <div v-for="article in searchedArticles" :key="article.title" class="my-3 col-md-4 col-12">
+      <router-link :to="{ name: 'Article', params: { id: article.id }}">
         <div class="blog-card text-xl h-full bg-white shadow-xl rounded-3xl">
           <img :src="require('@/assets/'+article.thumbnail)" class="h-48 w-full object-cover overflow-hidden rounded-t-3xl">
           <div class="p-6 text-left">
             <small class="subheader uppercase text-sm">{{ article.category }}</small>
             <h4 class="leading-none text-2xl font-black text-primary-500 mb-0">{{ article.title }}</h4>
-            <small>4 hours ago | Laura Mattei</small>
           </div>
         </div>
       </router-link>
@@ -82,7 +79,7 @@ export default {
       return this.results
           .filter(article => this.categoryFilter.includes(article.category))
           .filter((article) => {
-            return (article.title).match(new RegExp(this.searchArticles, 'i'))
+            return (article.title + article.content).match(new RegExp(this.searchArticles, 'i'))
           })
     }
   },
