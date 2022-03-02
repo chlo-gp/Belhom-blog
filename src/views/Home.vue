@@ -66,6 +66,7 @@
         <!-- hero image -->
         <div class="hero-image col-span-5">
           <img src="@/assets/mokup.png">
+          <img src="@/assets/blob.svg" class="relative">
         </div>
       </div>
     </div>
