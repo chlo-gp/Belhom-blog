@@ -200,6 +200,10 @@
 <script>
 // @ is an alias to /src
 import Footer from "@/components/Footer";
+import Vue from 'vue'
+import { VueTypedJs } from 'vue-typed-js'
+ 
+Vue.use(VueTypedJs)
 
 export default {
   name: "Home",
