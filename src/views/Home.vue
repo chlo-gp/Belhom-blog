@@ -13,7 +13,7 @@
             prendre soin de votre peau ?</h1>
           <p class="text-primary-500 text-2xl leading-relaxed font-thin text-left mt-8">Ici tu trouveras toutes les
             bonnes astuces beauté pour sublimer l’homme que tu es.</p>
-          <!-- <div class="get-app flex space-x-5 mt-10 justify-center md:justify-start">
+           <div class="get-app flex space-x-5 mt-10 justify-center md:justify-start">
             <button class="apple bg-white shadow-md px-3 py-2 rounded-lg flex items-center space-x-4">
               <div class="logo">
                 <svg
@@ -61,11 +61,11 @@
                 <p class="text-xs font-semibold text-gray-900">Google play</p>
               </div>
             </button>
-          </div> -->
+          </div> 
         </div>
         <!-- hero image -->
         <div class="hero-image col-span-5">
-          <img src="@/assets/hero-home.svg">
+          <img src="@/assets/mockup.png">
         </div>
       </div>
     </div>
