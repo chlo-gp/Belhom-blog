@@ -65,7 +65,7 @@
         </div>
         <!-- hero image -->
         <div class="hero-image col-span-5">
-          <img src="@/assets/mockup.png">
+          <img src="@/assets/mokup.png">
         </div>
       </div>
     </div>
