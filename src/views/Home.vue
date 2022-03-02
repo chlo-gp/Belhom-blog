@@ -9,8 +9,10 @@
       <div class="py-8 hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <!-- hero text -->
         <div class="hero-text col-span-7">
-          <h1 class="uppercase leading-none font-black text-4xl md:text-6xl md:text-5xl max-w-xl text-primary-500 text-left">Prêt à
-            prendre soin de votre peau ?</h1>
+            <vue-typed-js :strings="['votre peau', 'vos cheveux', 'vous']">
+              <h1 class="uppercase leading-none font-black text-4xl md:text-6xl md:text-5xl max-w-xl text-primary-500 text-left">Prêt à
+            prendre soin de <span class="typing"></span> ?</h1>
+            </vue-typed-js>
           <p class="text-primary-500 text-2xl leading-relaxed font-thin text-left mt-8">Ici tu trouveras toutes les
             bonnes astuces beauté pour sublimer l’homme que tu es.</p>
            <div class="get-app flex space-x-5 mt-10 justify-center md:justify-start">
