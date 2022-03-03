@@ -5,13 +5,13 @@
       <!-- hero wrapper -->
       <div
         class="
-          h-1/2 mb-20
+          mb-20
           hero-wrapper
           grid grid-cols-1
           md:grid-cols-12
           gap-8
           items-center
-        "
+        " style="height:75vh"
       >
         <!-- hero text -->
         <div class="hero-text col-span-7">
@@ -142,10 +142,10 @@
         </div>
         <!-- hero image -->
         <div class="hero-image col-span-5 relative top-0 left-0">
-          <img src="@/assets/blob.svg" class="relative top-0" />
+          <img src="@/assets/blob.svg" class="relative top-0 px-4" />
           <img
             src="@/assets/mokup.png"
-            class="absolute top-0"
+            class="absolute top-0 px-4"
             style="left: 32px"
           />
         </div>
