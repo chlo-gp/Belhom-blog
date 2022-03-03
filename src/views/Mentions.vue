@@ -301,7 +301,7 @@
         </p>
       </div>
     </div>
-    <Newsletter />
+    <NewsletterWeb />
   </div>
   <Footer />
 </template>
@@ -309,10 +309,10 @@
 
 <script>
 import Footer from "@/components/Footer";
-import Newsletter from "@/components/Newsletter";
+import NewsletterWeb from "@/components/Newsletter";
 
 export default {
-  name: "Mentions",
-  components: { Footer, Newsletter },
+  name: "MentionsWeb",
+  components: { Footer, NewsletterWeb },
 };
 </script>

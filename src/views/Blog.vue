@@ -53,19 +53,19 @@
       </router-link>
     </div>
   </section>
-  <Newsletter/>
+  <NewsletterWeb/>
   </body>
-  <Footer/>
+  <FooterWeb/>
 </template>
 
 <script>
 import axios from 'axios';
-import Footer from "@/components/Footer";
-import Newsletter from "@/components/Newsletter";
+import FooterWeb from "@/components/Footer";
+import NewsletterWeb from "@/components/Newsletter";
 
 export default {
-  name: "Blog",
-  components: {Footer, Newsletter},
+  name: "BlogWeb",
+  components: {FooterWeb, NewsletterWeb},
   data() {
     return {
       results: [],

@@ -28,6 +28,6 @@
 
 <script>
 export default {
-  name: "Newsletter"
+  name: "NewsletterWeb"
 }
 </script>

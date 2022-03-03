@@ -44,7 +44,7 @@
 import Footer from "@/components/Footer"
 
 export default {
-  name: "Contact",
+  name: "ContactWeb",
   components: {Footer},
 
 }

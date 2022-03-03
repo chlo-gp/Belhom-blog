@@ -211,7 +211,7 @@
         <img class="px-5" src="@/assets/umai.png" alt="">
       </div>
     </section>
-    <Newsletter/>
+    <NewsletterWeb/>
   </div>
   <Footer/>
 </template>
@@ -219,12 +219,12 @@
 <script>
 
 import Footer from "@/components/Footer";
-import Newsletter from "@/components/Newsletter";
+import NewsletterWeb from "@/components/Newsletter";
 
 
 export default {
-  name: "About",
-  components: {Footer, Newsletter}
+  name: "AboutWeb",
+  components: {Footer, NewsletterWeb}
 }
 </script>
 

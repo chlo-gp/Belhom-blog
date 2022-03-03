@@ -9,7 +9,7 @@
       <h2 class="mb-8">{{ article.lead }}</h2>
       <p class="px-12 text-justify">{{ article.content }}</p>
     </div>
-    <Newsletter/>
+    <NewsletterWeb/>
   </div>
   <Footer/>
 </template>
@@ -18,11 +18,11 @@
 <script>
 import axios from 'axios';
 import Footer from "@/components/Footer";
-import Newsletter from "@/components/Newsletter";
+import NewsletterWeb from "@/components/Newsletter";
 
 export default {
-  name: 'Article',
-  components: {Footer, Newsletter},
+  name: 'ArticleWeb',
+  components: {Footer, NewsletterWeb},
 
   data() {
     return {

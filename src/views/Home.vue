@@ -405,7 +405,7 @@
 import Footer from "@/components/Footer";
 
 export default {
-  name: "Home",
+  name: "HomeWeb",
   components: { Footer },
   data() {
     return {
